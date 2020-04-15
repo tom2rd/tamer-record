@@ -1221,3 +1221,50 @@ section.lazy-placeholder:after {
 .cid-rWdbDLJrXf H5 {
   color: #ffffff;
 }
+.cid-rWeysUnHAp {
+  padding-top: 15px;
+  padding-bottom: 60px;
+  background-color: #232323;
+}
+.cid-rWeysUnHAp .mbr-iconfont {
+  color: #879a9f;
+}
+.cid-rWeysUnHAp .mbr-iconfont:hover {
+  color: #149dcc !important;
+}
+.cid-rWeysUnHAp .mbr-text {
+  margin: 1.5rem 0;
+}
+.cid-rWeysUnHAp .card-title {
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+.cid-rWeysUnHAp .card-img {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+.cid-rWeysUnHAp .img-icon {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-rWeysUnHAp .my-col {
+    -webkit-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 15px;
+  }
+}
+.cid-rWeysUnHAp .mbr-text,
+.cid-rWeysUnHAp .social-links {
+  color: #767676;
+}
+.cid-rWeysUnHAp H2 {
+  color: #ffffff;
+}
+.cid-rWeysUnHAp H5 {
+  color: #ffffff;
+}
