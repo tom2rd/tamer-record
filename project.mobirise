@@ -49,20 +49,22 @@
       "themeColor": "#f7ed4a"
     },
     "favicon": false,
-    "robotsSwitcher": false,
-    "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
-    "siteUrl": false,
+    "robotsSwitcher": true,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://tamer-record.tokyo/",
     "cookiesAlert": false,
     "gdpr": false,
-    "pwa-switcher": true
+    "pwa-switcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
+    "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-33770377-3\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-33770377-3');\n</script>\n"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "TAMER-RECORD",
+        "meta_descr": "こだいらあたりのミュージシャン・音楽プレースを応援するバーチャルレーベルです",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
