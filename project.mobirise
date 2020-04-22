@@ -39,7 +39,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 16,
+    "uniqCompNum": 20,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "PWA": {
@@ -480,10 +480,13 @@
                   }
                 }
               }
+            },
+            ".mbr-text": {
+              "color": "#efefef"
             }
           },
           "_name": "content11",
-          "_customHTML": "<section class=\"mbr-section article content11\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Square Counters\" name=\"squareCounters\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#232323\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ol>\n                    <li><b>応援の方法</b> - まずは、<a href=\"https://www.facebook.com/tamer.record/\" target=\"_blank\">Facebookでいいね</a>や、Youtube Channelの登録などお願いします。収益を上げられる方法を順次考えていきます。まとまったクラウドファンディングや未来チケットなどの販売や、無観客ライブなど準備ができ次第考えて行こうと思っています。まずは、ゆかりのミュージシャンの応援を聞いて、音楽スポットを忘れないでいてほしいです。</li>\n                    <li><b>ミュージシャンの方へ</b>&nbsp;- <a href=\"https://gigafile.nu/\">GiGaFile便</a>を使って、応援ビデオを<a href=\"https://www.facebook.com/tamer.record/\">たまーレコードのFacebookのメッセージ送信</a>又は、<a href=\"https://twitter.com/tamer_record\">TwitterのDM</a>、または<a href=\"https://www.facebook.com/bigiandb3/\">Big市川＆B3</a>までお送りください。私たちのYoutubeチャンネルから配信します。プロ・アマは問いません。また小平だけに限っておりません。GiGAFile便の使い方は、<a href=\"https://appli-world.jp/posts/1181\">こちらのページ</a>を参考にしてください。</li>\n                </ol>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content11\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"checkbox\" title=\"Square Counters\" name=\"squareCounters\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#149dcc\" condition=\"stylizedCounters\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#232323\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text counter-container col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ol>\n                    <li><b>応援の方法</b> - まずは、<a href=\"https://www.facebook.com/tamer.record/\" target=\"_blank\">Facebookでいいね</a>や、Youtube Channelの登録などお願いします。収益を上げられる方法を順次考えていきます。まとまったクラウドファンディングや未来チケットなどの販売や、無観客ライブなど準備ができ次第考えて行こうと思っています。まずは、ゆかりのミュージシャンの応援を聞いて、音楽スポットを忘れないでいてほしいです。</li>\n                    <li><b>ミュージシャンの方へ</b>&nbsp;- <a href=\"https://gigafile.nu/\" target=\"_blank\">GiGaFile便</a>を使って、応援ビデオを<a href=\"https://www.facebook.com/tamer.record/\" target=\"_blank\">たまーレコードのFacebookのメッセージ送信</a>又は、<a href=\"https://twitter.com/tamer_record\" target=\"_blank\">TwitterのDM</a>、または<a href=\"https://www.facebook.com/bigiandb3/\" target=\"_blank\">Big市川＆B3</a>までお送りください。私たちのYoutubeチャンネルから配信します。プロ・アマは問いません。また小平だけに限っておりません。GiGAFile便の使い方は、<a href=\"https://appli-world.jp/posts/1181\" target=\"_blank\">こちらのページ</a>を参考にしてください。</li><li>お店の方へ　- 随時掲載店を募集しています。<b>Zoom仮想背景</b>などに使える画像などを<a href=\"https://www.facebook.com/tamer.record/\" target=\"_blank\">たまーレコードのFacebookのメッセージ送信</a>又は、<a href=\"https://twitter.com/tamer_record\" target=\"_blank\">TwitterのDM</a>、までお送りください。</li>\n                </ol>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rWdcZwmMgr",
           "_anchor": "content11-6",
           "_PHPplaceholders": [],
@@ -498,131 +501,546 @@
           "_isSecondary": true,
           "typeCompatible": "type",
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".box1": {
-              "background-image": "url(@video1)",
-              "background-size": "cover",
-              "background-position": "center",
-              "height": "400px",
-              "display": "flex",
-              "align-items": "center",
-              "justify-content": "center",
-              "margin": "auto"
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
             },
-            ".box2": {
-              "background-image": "url(@video2)",
-              "background-size": "cover",
-              "background-position": "center",
-              "height": "400px",
-              "display": "flex",
-              "align-items": "center",
-              "justify-content": "center",
-              "margin": "auto"
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
             },
-            ".icon-wrap": {
-              "background-color": "@iconBGColor !important",
-              "border-radius": "50%",
-              "width": "80px",
-              "height": "80px",
-              "margin": "auto",
-              "display": "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              "transition": "all 0.3s",
-              "&:hover": {
-                "transform": "scale(1.1)"
-              }
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
             },
-            ".icon-wrap span": {
-              "padding-left": "8px"
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
             },
-            ".mbr-media span": {
-              "font-size": "30px",
-              "cursor": "pointer",
-              "position": "relative",
-              "display": "inline-block",
-              "transition": "all 0.25s",
-              "color": "@iconColor !important",
-              "&.mbri-play:before": {
-                "position": "absolute",
-                "left": "50%",
-                "-webkit-transform": "translateX(-35%)",
-                "-moz-transform": "translateX(-35%)",
-                "-ms-transform": "translateX(-35%)",
-                "-o-transform": "translateX(-35%)",
-                "transform": "translateX(-35%)"
-              }
-            },
-            ".modalWindow": {
-              "position": "fixed",
-              "z-index": "5000",
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
               "left": "0",
               "top": "0",
-              "background-color": "rgba(61, 61, 61, 0.65)",
               "width": "100%",
               "height": "100%",
-              ".modalWindow-container": {
-                "display": "table-cell",
-                "vertical-align": "middle"
-              },
-              ".modalWindow-video": {
-                "height": "calc(80vw / 1.778)",
-                "width": "80vw",
-                "margin": "0 auto"
+              "background-color": "@overlayColor1",
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out",
+              "& when (@gradientOverlay)": {
+                "background": "linear-gradient(180deg, @overlayColor1, @overlayColor2)"
               }
             },
-            "a.close": {
+            ".icon-focus": {
+              "display": "none"
+            },
+            ".mbr-gallery-title": {
+              "transition": "all 0.5s ease",
               "position": "absolute",
-              "right": "4vw",
-              "top": "4vh",
-              "color": "#ffffff",
-              "z-index": "5000000",
-              "font-size": "37px",
-              "background": "#000",
-              "padding": "20px",
-              "border-radius": "50%",
+              "text-align": "left",
+              "display": "none",
+              "width": "100%",
+              "top": "0",
+              "right": "0",
+              "padding": "1rem",
+              "color": "#000000",
+              "font-weight": "bold",
+              "background": "transparent",
+              "-webkit-transition": "all 0.5s ease",
+              "-moz-transition": "all 0.5s ease",
+              "-o-transition": "all 0.5s ease",
+              "-ms-transition": "all 0.5s ease"
+            },
+            "ul": {
+              "font-size": "0"
+            },
+            ".mbr-gallery-filter ul li .btn": {
+              "border": "none",
+              "background-color": "transparent",
+              "color": "@tagsColor !important",
+              "padding": "0.5rem 1rem 0.6rem",
+              "border-radius": "0",
+              "margin": "0!important",
+              "transition": "padding, border 0s, transform .2s"
+            },
+            ".mbr-gallery-filter ul li .btn.active, .mbr-gallery-filter ul li.active .btn:not(.active)": {
+              "padding": "0.5rem 1rem 0.5rem",
+              "border-radius": "0 !important",
+              "position": "relative"
+            },
+            ".mbr-gallery-filter ul li .btn.active:after, .mbr-gallery-filter ul li.active .btn:not(.active):after": {
+              "content": "''",
+              "position": "absolute",
+              "bottom": "0",
+              "left": "0",
+              "width": "100%",
+              "height": "3px",
+              "background": "linear-gradient(90deg, @primaryColor, @secondaryColor)"
+            },
+            ".mbr-gallery-filter ul li": {
+              "padding": "0"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title": {
+                "padding-bottom": "1.5rem",
+                "display": "block"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacityItem !important"
+              }
+            },
+            ".btn": {
+              "background": "none",
+              "border-radius": "0 !important",
               "&:hover": {
-                "color": "#ffffff"
+                "background": "transparent !important",
+                "&:before": {
+                  "background": "transparent !important"
+                }
+              },
+              "&:before": {
+                "background-color": "transparent !important"
+              },
+              "&:focus": {
+                "box-shadow": "none"
               }
             },
-            "@media (max-width: 992px)": {
-              "& when not (@fullScreen)": {
-                "padding-top": "(@paddingTop * 10px)",
-                "padding-bottom": "(@paddingBottom * 10px)"
+            ".mbr-section-title": {
+              "position": "relative",
+              "z-index": "1"
+            }
+          },
+          "_name": "extGallery3",
+          "_customHTML": "<section class=\"extGallery mbr-gallery mbr-slider-carousel\" group=\"Additional Blocks\" plugins=\"Masonry,Slider,BootstrapCarouselSwipe,Gallery,VimeoVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\" inline>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Overlay Color 1\" name=\"overlayColor1\" value=\"#ffffff\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradientOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#149dcc\" condition=\"gradientOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacityItem\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" inline>\n        <input type=\"color\" title=\"Tags Color\" name=\"tagsColor\" value=\"#232323\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\" mbr-if=\"showTitle\">\n            <div mbr-class=\"{'col-sm-12': !fullWidth,\n                             'col-sm-10': fullWidth}\">\n                <h2 class=\"align-center mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\"><a href=\"https://www.youtube.com/channel/UCUjvB7erDcueTXdi7KDgcKw/\" target=\"_blank\">応援ビデオGALLERY</a>&nbsp;(沢山の応援ビデオがあります是非<b><i><a href=\"https://www.youtube.com/channel/UCUjvB7erDcueTXdi7KDgcKw/\" target=\"_blank\">youtube</a></i></b>でどうぞ)</h2>\n            </div>\n        </div>\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"col-left-gallery\" mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n</section>",
+          "_cid": "rWRflS3MDA",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-18-50.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/I523g9zf62A",
+                "image": "@PROJECT_PATH@/assets/images/background1.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/background1-800x533.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "応援の呼びかけ",
+                "active": false
               },
-              ".box1": {
-                "margin-bottom": "1rem"
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-33-13.jpg",
+                "playVideo": false,
+                "videoUrl": "https://youtu.be/b81LRpA4qxI",
+                "image": "@PROJECT_PATH@/assets/images/2-2000x1125.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/2-2000x1125-800x450.jpg",
+                "alt": "Tamer record",
+                "title": "Tamer record",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://www.youtube.com/channel/UCUjvB7erDcueTXdi7KDgcKw/\" target=\"_blank\">Youtube Channel</a>",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-24-4.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/XVMkCiJ9R-g",
+                "image": "@PROJECT_PATH@/assets/images/tamer-record-logo-122x122.png",
+                "thumb": "@PROJECT_PATH@/assets/images/tamer-record-logo-122x122-122x122.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Looking at a Rainbow Through a Dirty Window",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-21-7.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/tIe4BxMdhzI",
+                "image": "@PROJECT_PATH@/assets/images/tamer-record-logo-122x122.png",
+                "thumb": "@PROJECT_PATH@/assets/images/tamer-record-logo-122x122-122x122.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Rolling",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-25-53.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/VMGiKsLZnIU",
+                "image": "@PROJECT_PATH@/assets/images/pink-and-blue-galaxy-gaming-youtube-channel-art-1440x810.png",
+                "thumb": "@PROJECT_PATH@/assets/images/pink-and-blue-galaxy-gaming-youtube-channel-art-1440x810-800x450.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "切手のないおくりもの",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-27-9.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/-w7vCMBD9OU",
+                "image": "@PROJECT_PATH@/assets/images/elfuga-1280x720.png",
+                "thumb": "@PROJECT_PATH@/assets/images/elfuga-1280x720-800x450.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "All you need is LIVE!",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-28-32.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/r1yX1ZCA4I4",
+                "image": "@PROJECT_PATH@/assets/images/92510793-571652666783834-4050123146169155584-n-2000x1458.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/92510793-571652666783834-4050123146169155584-n-2000x1458-800x583.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "AI　Story",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-30-5.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/IFO7T5NyUbw",
+                "image": "@PROJECT_PATH@/assets/images/ichi-337x319.png",
+                "thumb": "@PROJECT_PATH@/assets/images/ichi-337x319-337x319.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Isn’t She Lovely",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-33-13.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/b81LRpA4qxI",
+                "image": "@PROJECT_PATH@/assets/images/2-2000x1125.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/2-2000x1125-800x450.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "クープラン ：クーラント ト短調",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-40-41.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/G4g2jbYGknk",
+                "image": "@PROJECT_PATH@/assets/images/tamer-record-logo-122x122.png",
+                "thumb": "@PROJECT_PATH@/assets/images/tamer-record-logo-122x122-122x122.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://www.youtube.com/channel/UCUjvB7erDcueTXdi7KDgcKw/\" target=\"_blank\">小平応援ピアノ</a>",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-24-4.jpg",
+                "playVideo": true,
+                "videoUrl": "https://www.youtube.com/watch?v=XVMkCiJ9R-g&list=PLfF2zvvUGSc_Z03499BENakmiD4vsjTNi",
+                "image": "@PROJECT_PATH@/assets/images/2-2000x1125.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/2-2000x1125-800x450.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://www.youtube.com/channel/UCUjvB7erDcueTXdi7KDgcKw/\" target=\"_blank\">Youtube Channel</a>&nbsp;再生リスト",
+                "active": true
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2020322-1134472020-3-3-13-39-14.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/X5T3NfH9SD4",
+                "image": "@PROJECT_PATH@/assets/images/background1.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/background1-800x533.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://www.youtube.com/channel/UCUjvB7erDcueTXdi7KDgcKw/\" target=\"_blank\">ジミヘン・サンタナ・クラプトン　メドレー</a>",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "extGallery3-j"
+        },
+        {
+          "alias": "mobirise4-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "@overlayColor1",
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out",
+              "& when (@gradientOverlay)": {
+                "background": "linear-gradient(180deg, @overlayColor1, @overlayColor2)"
               }
             },
-            "@media (max-width: 576px)": {
-              "& when not (@fullScreen)": {
-                "padding-top": "(@paddingTop * 7px)",
-                "padding-bottom": "(@paddingBottom * 7px)"
+            ".icon-focus, .icon-video": {
+              "font-size": "2rem !important",
+              "width": "50px",
+              "height": "50px",
+              "top": "~\"calc(50% - 25px)\"",
+              "left": "~\"calc(50% - 25px)\"",
+              "&:before": {
+                "content": "'+'",
+                "border-radius": "100px",
+                "background": "rgba(0, 0, 0, 0.5)",
+                "width": "100%",
+                "height": "100%",
+                "padding-bottom": "6px",
+                "display": "flex",
+                "-webkit-align-items": "center",
+                "align-items": "center",
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              }
+            },
+            ".icon-video": {
+              "font-size": "1.5rem !important"
+            },
+            ".mbr-gallery-title": {
+              "transition": "all 0.5s ease",
+              "position": "absolute",
+              "text-align": "left",
+              "display": "none",
+              "width": "100%",
+              "bottom": "0",
+              "right": "0",
+              "padding": "1rem",
+              "color": "#ffffff",
+              "font-weight": "bold",
+              "background": "transparent",
+              "-webkit-transition": "all 0.5s ease",
+              "-moz-transition": "all 0.5s ease",
+              "-o-transition": "all 0.5s ease",
+              "-ms-transition": "all 0.5s ease"
+            },
+            "ul": {
+              "font-size": "0"
+            },
+            ".mbr-gallery-filter ul": {
+              "text-align": "left"
+            },
+            ".mbr-gallery-filter ul li": {
+              ".btn": {
+                "position": "relative",
+                "padding": "0.5rem 1rem 0.6rem",
+                "margin": "0!important",
+                "background-color": "transparent !important",
+                "border-width": "0 !important",
+                "color": "@tagsColor !important",
+                "&:after": {
+                  "content": "\"\"",
+                  "position": "absolute",
+                  "left": "0",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "border": "1px solid transparent",
+                  "border-radius": "100px",
+                  "opacity": "0.5"
+                }
               },
-              ".box1, .box2": {
-                "height": "250px"
+              "&:not(.active) .btn:hover:after, &.active .btn:not(.active):after, &.active .btn.active:after, &:not(.active) .btn.active:after": {
+                "border-color": "@tagsColor"
+              },
+              ".btn:hover:after": {
+                "-webkit-animation": "1s btn-animation linear infinite",
+                "animation": "1s btn-animation linear infinite"
+              },
+              ".btn:not(:hover):after": {
+                "animation": "none"
+              },
+              "padding": "0",
+              "margin": "0 .2rem",
+              "&:first-child, &:last-child": {
+                "margin": "0"
+              }
+            },
+            ".mbr-gallery-filter ul .mbr-gallery-filter-all .btn:after": {
+              "opacity": "1",
+              "border-color": "@tagsColor"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title": {
+                "display": "block"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacityItem !important"
+              }
+            },
+            "@keyframes btn-animation": {
+              "0%": {
+                "-webkit-transform": "scale(1)",
+                "transform": "scale(1)"
+              },
+              "100%": {
+                "-webkit-transform": "scale(1.3)",
+                "transform": "scale(1.3)",
+                "opacity": "0"
               }
             }
           },
-          "_name": "extVideo2",
-          "_customHTML": "<section class=\"extVideo\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"30\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"30\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon BG Color\" name=\"iconBGColor\" value=\"#149dcc\">\n        <input type=\"image\" name=\"video1\" value=\"@PROJECT_PATH@/assets/images/ichi-337x319.png\" title=\"Image 1\">\n        <input type=\"image\" name=\"video2\" value=\"@PROJECT_PATH@/assets/images/tamer-record-logo-500x500.png\" title=\"Image 2\">\n        <input type=\"text\" title=\"Modal Video 1\" name=\"modalVideo\" value=\"https://www.youtube.com/watch?v=I523g9zf62A\">\n        <input type=\"text\" title=\"Modal Video 2\" name=\"modalVideo2\" value=\"https://www.youtube.com/watch?v=8-e8LSfT6gI\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background3.jpg\" title=\"Background Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Background Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-12 col-12 col-lg-6\">\n                <div class=\"box1\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".w1\">\n                        <div class=\"icon-wrap\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"mbr-white col-md-12 col-12 col-lg-6\">\n                <div class=\"box2\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".w2\">\n                        <div class=\"icon-wrap\">\n                            <a href=\"https://www.youtube.com/watch?v=cjKKul3U7Ek&list=PLfF2zvvUGSc_Z03499BENakmiD4vsjTNi\" target=\"_blank\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div>\n        <div class=\"modalWindow w1\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"modalWindow w2\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo2}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n\n\n    </div>\n</section>",
-          "_cid": "rWdgVHx328",
-          "_anchor": "extVideo2-8",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [],
+          "_name": "extGallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel extGallery\" group=\"Additional Blocks\" plugins=\"Masonry,Slider,BootstrapCarouselSwipe,Gallery,VimeoVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width Gallery\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"color\" title=\"Items Overlay Color 1\" name=\"overlayColor1\" value=\"#e96188\">\n        <input type=\"checkbox\" title=\"Items Gradient Overlay\" name=\"gradientOverlay\" checked>\n        <input type=\"color\" title=\"Items Overlay Color 2\" name=\"overlayColor2\" value=\"#4e84c2\" condition=\"gradientOverlay\">\n        <input type=\"range\" title=\"Items Overlay Opacity\" name=\"overlayOpacityItem\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" inline>\n        <input type=\"color\" title=\"Tags Color\" name=\"tagsColor\" value=\"#e96188\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">ビデオチャットなどの背景にどうぞ文字をクリックするとDownloadできます。　<br>元イメージも<a href=\"https://github.com/tom2rd/tamer-record/tree/master/Zoom%E8%83%8C%E6%99%AF\" target=\"_blank\">こちらからDownloadできます</a>。</h3>\n        <h2 class=\"align-left mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title,.mbr-gallery-filter ul\" mbr-class=\"{'pb-4':!gallery__filter}\">\n        Zoom バーチャル背景ギャラリー</h2>\n    </div> \n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"col-left-gallery\" mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text mbr-gallery-show-filter></div>\n    </div>\n</section>",
+          "_cid": "rWQTX1MDTw",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "エル・フガドール",
+                "videoPreview": "@ADDONS_PATH@/mobirise4-blocks/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/elfuga-1280x720.png",
+                "thumb": "@PROJECT_PATH@/assets/images/elfuga-1280x720-800x450.png",
+                "alt": "エルフガドール",
+                "title": "エルフガドール",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://github.com/tom2rd/tamer-record/raw/master/Zoom%E8%83%8C%E6%99%AF/elfuga.png\" target=\"_blank\">ライブ・カフェ ・エル・フガドール</a>",
+                "active": false
+              },
+              {
+                "tags": "ヤマヤ",
+                "videoPreview": "@ADDONS_PATH@/mobirise4-blocks/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/yamaya-1280x720.png",
+                "thumb": "@PROJECT_PATH@/assets/images/yamaya-1280x720-800x450.png",
+                "alt": "カメラのヤマヤ",
+                "title": "カメラのヤマヤ",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://github.com/tom2rd/tamer-record/raw/master/Zoom%E8%83%8C%E6%99%AF/yamaya.png\" target=\"_blank\">カメラカフェ　ヤマヤ</a>",
+                "active": false
+              },
+              {
+                "tags": "Olive",
+                "videoPreview": "@ADDONS_PATH@/mobirise4-blocks/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/olive-1280x720.png",
+                "thumb": "@PROJECT_PATH@/assets/images/olive-1280x720-800x450.png",
+                "alt": "Dining Cafe Olive",
+                "title": "Dining Cafe Olive",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://github.com/tom2rd/tamer-record/raw/master/Zoom%E8%83%8C%E6%99%AF/olive.png\" target=\"_blank\">Dining Cafe Olive</a>",
+                "active": false
+              },
+              {
+                "tags": "RollingBeans",
+                "videoPreview": "@ADDONS_PATH@/mobirise4-blocks/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/rollingbeans-1280x720.png",
+                "thumb": "@PROJECT_PATH@/assets/images/rollingbeans-1280x720-800x450.png",
+                "alt": "RollingBeans",
+                "title": "Rolling Beans",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://github.com/tom2rd/tamer-record/raw/master/Zoom%E8%83%8C%E6%99%AF/RollingBeans.png\" target=\"_blank\">Rolling Beans</a>",
+                "active": false
+              },
+              {
+                "tags": "TSP",
+                "videoPreview": "@ADDONS_PATH@/mobirise4-blocks/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/tsp-1280x720.png",
+                "thumb": "@PROJECT_PATH@/assets/images/tsp-1280x720-800x450.png",
+                "alt": "ライブハウスTSP",
+                "title": "ライブハウスTSP",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://github.com/tom2rd/tamer-record/raw/master/Zoom%E8%83%8C%E6%99%AF/tsp.png\" target=\"_blank\">ライブハウスTSP</a>",
+                "active": true
+              },
+              {
+                "tags": "TSP",
+                "videoPreview": "@ADDONS_PATH@/mobirise4-blocks/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/nagata-1280x720.png",
+                "thumb": "@PROJECT_PATH@/assets/images/nagata-1280x720-800x450.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://github.com/tom2rd/tamer-record/raw/master/Zoom%E8%83%8C%E6%99%AF/nagata.png\" target=\"_blank\">永田珈琲</a>",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "extGallery1-i"
         },
         {
           "alias": false,
@@ -737,7 +1155,7 @@
             }
           },
           "_name": "extTeams3",
-          "_customHTML": "<section class=\"extTeams\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\"> \n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Name\" name=\"showContentTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Name Subtitle\" name=\"showContentSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Content Text\" name=\"showContentText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"color\" title=\"Icons Hover\" name=\"iconsHover\" condition=\"showIcons\" value=\"#149dcc\">\n        <select title=\"Social icons\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container':cardsAmount<5,'container-fluid':cardsAmount>4}\">\n        <h2 class=\"mbr-section-title  pb-3 mbr-fonts-style align-center \" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-appselector=\".mbr-section-title \">KODAIRAを応援しています！</h2>\n        <h3 class=\"mbr-section-subtitle pb-4 mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"media-container-row\">\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/%E4%B8%80%E6%A9%8B%E5%AD%A6%E5%9C%92%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF-%E3%83%AD%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%93%E3%83%BC%E3%83%B3%E3%82%BA-1402099800037615/\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-3-492x369.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">Rolling Beans</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        一橋学園前</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        洒落たカフェだけど、マスターもお客さんも店に置いてあるアコギを突如弾き出しちゃったりする楽しい店！頻繁にライブが開催されるほか、お客さんによるギター部活動あり！ by Big 市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.t-sound-pro.com/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-4-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        T.S.P</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">花小金井</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        本格的な音響・照明を兼ね備えたかっちょ良いライブハウス！頻繁に各種のライブイベントが開催されるほか、ホールレンタルもあり、リハーサルも可能！小平にもこんないい場所があるんだ、という感じ！ by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/%E5%B1%85%E9%85%92%E5%B1%8B%E3%81%B0%E3%82%93%E3%81%A9%E3%81%BE%E3%82%93-122813667841493/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-6-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        ばんどまん</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        花小金井</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        ママさんの手料理が最高な音楽的居酒屋。お客さん達のセッションデイでは、マスターもカウンターの中でギンギンにエレキを弾いちゃう楽しい店！アコースティック系のライブも行われる！　by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <div class=\"img-holder\">\n                        <a href=\"https://www.facebook.com/Dining-Cafe-Olive-959869390689918/\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-2-450x300.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">Dining Cafe Olive</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        花小金井</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        ゆったりした雰囲気で、充実したイタ飯が味わえる！店内にはグランドピアノ、ドラムが常設。マスターが自らスティックを握るジャズセッションを始め、様々なライブが開催される！by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"extTeams\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\"> \n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Name\" name=\"showContentTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Name Subtitle\" name=\"showContentSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Content Text\" name=\"showContentText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"color\" title=\"Icons Hover\" name=\"iconsHover\" condition=\"showIcons\" value=\"#149dcc\">\n        <select title=\"Social icons\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container':cardsAmount<5,'container-fluid':cardsAmount>4}\">\n        <h2 class=\"mbr-section-title  pb-3 mbr-fonts-style align-center \" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-appselector=\".mbr-section-title \">KODAIRAを応援しています！</h2>\n        <h3 class=\"mbr-section-subtitle pb-4 mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"media-container-row\">\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/%E4%B8%80%E6%A9%8B%E5%AD%A6%E5%9C%92%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%83%E3%82%AF-%E3%83%AD%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%93%E3%83%BC%E3%83%B3%E3%82%BA-1402099800037615/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-3-492x369.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">Rolling Beans</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        一橋学園前</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        洒落たカフェだけど、マスターもお客さんも店に置いてあるアコギを突如弾き出しちゃったりする楽しい店！頻繁にライブが開催されるほか、お客さんによるギター部活動あり！ by Big 市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.t-sound-pro.com/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-4-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        T.S.P</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">花小金井</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        本格的な音響・照明を兼ね備えたかっちょ良いライブハウス！頻繁に各種のライブイベントが開催されるほか、ホールレンタルもあり、リハーサルも可能！小平にもこんないい場所があるんだ、という感じ！ by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/%E5%B1%85%E9%85%92%E5%B1%8B%E3%81%B0%E3%82%93%E3%81%A9%E3%81%BE%E3%82%93-122813667841493/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-6-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        ばんどまん</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        花小金井</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        ママさんの手料理が最高な音楽的居酒屋。お客さん達のセッションデイでは、マスターもカウンターの中でギンギンにエレキを弾いちゃう楽しい店！アコースティック系のライブも行われる！　by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <div class=\"img-holder\">\n                        <a href=\"https://www.facebook.com/Dining-Cafe-Olive-959869390689918/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-2-450x300.png\" alt=\"Mobirise\" title></a>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">Dining Cafe Olive</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        花小金井</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        ゆったりした雰囲気で、充実したイタ飯が味わえる！店内にはグランドピアノ、ドラムが常設。マスターが自らスティックを握るジャズセッションを始め、様々なライブが開催される！by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
           "_cid": "rWdbDLJrXf",
           "_anchor": "extTeams3-5",
           "_protectedParams": [],
@@ -801,7 +1219,7 @@
             }
           },
           "_name": "extTeams3",
-          "_customHTML": "<section class=\"extTeams\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\"> \n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Name\" name=\"showContentTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Name Subtitle\" name=\"showContentSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Content Text\" name=\"showContentText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"color\" title=\"Icons Hover\" name=\"iconsHover\" condition=\"showIcons\" value=\"#149dcc\">\n        <select title=\"Social icons\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container':cardsAmount<5,'container-fluid':cardsAmount>4}\">\n        <h2 class=\"mbr-section-title  pb-3 mbr-fonts-style align-center \" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-appselector=\".mbr-section-title \"></h2>\n        <h3 class=\"mbr-section-subtitle pb-4 mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"media-container-row\">\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/jugador11010/\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">エル・フガドール</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">上水本町</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        オープン・マイクや参加型イベントが頻繁に開催されるカフェ！お客さんが集まって遠征してライブをすることも。営業は木曜日から日曜日の間で行われるため、HPで要確認　by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"http://www.nagatacoffee.com/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-7-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        永田珈琲</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">小平駅</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        自家焙煎による珈琲は最高に美味しく、また、数え切れないほど用意された美しい珈琲カップに、絵画等が飾られた店内の素晴らしい空間作り！併設のスペースで、音楽イベント等が開催される。By Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/%E6%A5%A0-kusunoki-1671420009800959/\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/94129341-3208213345879876-6937555141587369984-n-492x369.jpeg\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        楠</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">小平市役所横</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\"><a href=\"https://hanakotech.official.ec/items/28050671\">応援チケットの購入</a><br>和える、出会える、食事処「楠 」をキャッチコピーとして、ちょっとユニークな店構えで、2016年3月にオープンしました。 ランチにティータイムにパーティーに宴会に、みなさまのご利用を心よりお待ち申し上げております。</p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <div class=\"img-holder\">\n                        <img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/cs-1-492x369.png\" alt=\"Mobirise\" title>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">XXXX</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        ｘｘｘｘ</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">ｘ</p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"extTeams\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\"> \n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Name\" name=\"showContentTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Name Subtitle\" name=\"showContentSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Content Text\" name=\"showContentText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"color\" title=\"Icons Hover\" name=\"iconsHover\" condition=\"showIcons\" value=\"#149dcc\">\n        <select title=\"Social icons\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container':cardsAmount<5,'container-fluid':cardsAmount>4}\">\n        <h2 class=\"mbr-section-title  pb-3 mbr-fonts-style align-center \" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-appselector=\".mbr-section-title \"></h2>\n        <h3 class=\"mbr-section-subtitle pb-4 mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"media-container-row\">\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/jugador11010/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box align-left\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">エル・フガドール</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">上水本町</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        オープン・マイクや参加型イベントが頻繁に開催されるカフェ！お客さんが集まって遠征してライブをすることも。営業は木曜日から日曜日の間で行われるため、HPで要確認　by Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"http://www.nagatacoffee.com/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/unnamed-7-492x328.png\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        永田珈琲</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">小平駅</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">\n                        自家焙煎による珈琲は最高に美味しく、また、数え切れないほど用意された美しい珈琲カップに、絵画等が飾られた店内の素晴らしい空間作り！併設のスペースで、音楽イベント等が開催される。By Big市川\n                    </p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <a href=\"https://www.facebook.com/%E6%A5%A0-kusunoki-1671420009800959/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/94129341-3208213345879876-6937555141587369984-n-492x369.jpeg\" alt=\"Mobirise\" title></a>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">\n                        楠</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">小平市役所横</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\"><a href=\"https://hanakotech.official.ec/items/28050671\">応援チケットの購入</a><br>和える、出会える、食事処「楠 」をキャッチコピーとして、ちょっとユニークな店構えで、2016年3月にオープンしました。 ランチにティータイムにパーティーに宴会に、みなさまのご利用を心よりお待ち申し上げております。</p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 align-left\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img mb-5\">\n                    <div class=\"img-holder\">\n                        <a href=\"https://www.facebook.com/yamaya.camera/\" target=\"_blank\"><img class=\"img-icon\" src=\"@PROJECT_PATH@/assets/images/ewfswo3u8aqkesy-492x327.jpeg\" alt=\"Mobirise\" title></a>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showContentTitle||showContentText||showContentSubTitle||showIcons\">\n                    <h4 class=\"card-title mbr-fonts-style mbr-semibold\" mbr-theme-style=\"display-5\" mbr-if=\"showContentTitle\" data-app-selector=\".card-title\">カメラのヤマヤ</h4>\n                    <h5 class=\"user-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showContentSubTitle\">\n                        学園東町</h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showContentText\" data-app-selector=\".mbr-text, .social-links\">セルフサービスのWi-Fi付カフェスペース(300円)があるフィルムカメラ販売店です。\n<br>カフェスペースは、コワーキングスペースとしてもご利用いただけます。</p>\n                    <div class=\"social-links\" mbr-if=\"showIcons\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"px-2 socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"px-2 socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"px-2 socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                        <a href=\"https://linkedin.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                            <span mbr-icon class=\"px-2 socicon-linkedin socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
           "_anchor": "extTeams3-9",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
